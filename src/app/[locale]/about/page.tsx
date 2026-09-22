@@ -29,7 +29,7 @@ export default function AboutPage() {
             Zekeriyaköy Nazmi Arıkan Fen Bilimleri
           </span>
           <h1
-            className="enter-up text-4xl md:text-7xl lg:text-8xl font-bold tracking-tighter bg-gradient-to-b from-slate-900 via-slate-900 to-primary/20 dark:from-white dark:via-white dark:to-primary/20 bg-clip-text text-transparent leading-tight"
+            className="enter-up text-4xl md:text-7xl lg:text-8xl font-bold tracking-tighter bg-gradient-to-b from-slate-900 via-slate-900 to-primary dark:from-white dark:via-white dark:to-primary bg-clip-text text-transparent leading-tight"
             style={{ animationDelay: '0.25s' }}
           >
             {t('hero_slogan')}

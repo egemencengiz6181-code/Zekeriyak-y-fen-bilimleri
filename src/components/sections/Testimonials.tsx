@@ -67,7 +67,7 @@ export default function TestimonialsSection({
         <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-primary mb-4">
           {subtitle}
         </h2>
-        <h3 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-900 to-slate-900/40 dark:from-white dark:to-white/40 bg-clip-text text-transparent">
+        <h3 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-900 to-slate-900/75 dark:from-white dark:to-white/75 bg-clip-text text-transparent">
           {title}
         </h3>
       </div>

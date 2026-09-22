@@ -171,7 +171,7 @@ export default function ServicePage({
         </div>
 
         {/* H1 */}
-        <h1 className="enter-up text-5xl md:text-7xl font-bold tracking-tighter leading-[1.04] bg-gradient-to-b from-slate-900 to-slate-900/50 dark:from-white dark:to-white/50 bg-clip-text text-transparent mb-10">
+        <h1 className="enter-up text-5xl md:text-7xl font-bold tracking-tighter leading-[1.04] bg-gradient-to-b from-slate-900 to-slate-900/75 dark:from-white dark:to-white/75 bg-clip-text text-transparent mb-10">
           {t(`items.${slug}.title`)}
         </h1>
 

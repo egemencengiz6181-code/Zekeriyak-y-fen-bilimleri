@@ -54,7 +54,7 @@ export default function ContactPage() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-24">
           <h1
-            className="enter-up text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-b from-slate-900 to-slate-900/40 dark:from-white dark:to-white/40 bg-clip-text text-transparent leading-tight"
+            className="enter-up text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-b from-slate-900 to-slate-900/75 dark:from-white dark:to-white/75 bg-clip-text text-transparent leading-tight"
           >
             {t('title')}
           </h1>

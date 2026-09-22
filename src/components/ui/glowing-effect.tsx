@@ -49,15 +49,10 @@ const GlowingEffect = memo(
           } as React.CSSProperties
         }
         className={cn(
-          "pointer-events-none absolute inset-0 rounded-[inherit]",
-          "before:content-[''] before:absolute before:rounded-[inherit]",
-          "before:inset-[calc(-1*var(--glow-border-width))]",
-          "before:[background:var(--glow-gradient)]",
-          "before:[padding:var(--glow-border-width)]",
-          "before:[mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)]",
-          "before:[mask-composite:exclude]",
-          "before:[-webkit-mask-composite:xor]",
-          glow ? "opacity-60" : "opacity-30",
+          // Maske kuralları globals.css'teki `.glow-ring`de; Tailwind
+          // arbitrary-value olarak yazıldığında kural sırası bozuluyor.
+          "glow-ring pointer-events-none absolute inset-0 rounded-[inherit]",
+          glow ? "opacity-50" : "opacity-25",
           className
         )}
       />

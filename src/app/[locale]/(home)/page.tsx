@@ -84,7 +84,7 @@ export default async function IndexPage({
           title={
             <>
               Sağlam Temel,<br />
-              <span className="bg-gradient-to-r from-[#ec2027] via-[#f06060] to-[#fff] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#ec2027] via-[#f06060] to-[#e0575d] bg-clip-text text-transparent">
                 Kanıtlanmış Başarı
               </span>
             </>

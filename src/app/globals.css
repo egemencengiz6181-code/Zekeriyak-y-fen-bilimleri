@@ -37,6 +37,33 @@ body {
     mask-image: radial-gradient(closest-side, #000 0%, rgba(0, 0, 0, 0.6) 45%, transparent 100%);
   }
 
+  /* Gradient çerçeve ("ring") — kartın yalnızca kenarını boyar.
+     Bu, Tailwind'de arbitrary-value olarak yazıldığında CSS çıktısında
+     `mask-composite` kuralı `mask` kısayolundan ÖNCE geliyor; kısayol da
+     composite'i `add`e sıfırlıyordu. Sonuç: maske devre dışı kalıyor ve
+     gradient tüm kartı kaplayıp yazıların üstünü örtüyordu. Bu yüzden tek
+     kuralda, doğru sırayla tanımlanıyor. */
+  .glow-ring::before {
+    content: '';
+    position: absolute;
+    inset: calc(-1 * var(--glow-border-width, 1px));
+    border-radius: inherit;
+    padding: var(--glow-border-width, 1px);
+    background: var(--glow-gradient);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    display: none;
+  }
+  /* Maske birleştirmeyi desteklemeyen tarayıcıda çerçeveyi hiç çizme —
+     aksi halde yine dolu bir renk bloğu olarak görünür. */
+  @supports ((mask-composite: exclude) or (-webkit-mask-composite: xor)) {
+    .glow-ring::before {
+      display: block;
+    }
+  }
+
   .perspective-1000 {
     perspective: 1000px;
   }

@@ -69,7 +69,7 @@ export default function LetsWorkSection() {
           </Reveal>
 
           {/* Title */}
-          <Reveal as="h2" className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight mb-8 bg-gradient-to-b from-slate-900 to-slate-900/40 dark:from-white dark:to-white/40 bg-clip-text text-transparent">
+          <Reveal as="h2" className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight mb-8 bg-gradient-to-b from-slate-900 to-slate-900/75 dark:from-white dark:to-white/75 bg-clip-text text-transparent">
             {t('title')}
           </Reveal>
 

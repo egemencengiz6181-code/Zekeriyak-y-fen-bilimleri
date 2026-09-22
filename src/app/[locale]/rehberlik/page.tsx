@@ -282,7 +282,7 @@ export default function RehberlikPage() {
               </div>
 
               <h1 className="enter-up text-4xl md:text-5xl xl:text-6xl font-black tracking-tighter leading-[1.05] mb-6">
-                <span className="bg-gradient-to-br from-slate-900 via-slate-900 to-slate-900/40 dark:from-white dark:via-white dark:to-white/40 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-br from-slate-900 via-slate-900 to-slate-900/75 dark:from-white dark:via-white dark:to-white/75 bg-clip-text text-transparent">
                   Psikolojik Danışmanlık
                 </span>
                 <br />

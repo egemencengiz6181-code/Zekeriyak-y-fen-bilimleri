@@ -23,6 +23,11 @@ const nextConfig = {
   },
 
   images: {
+    // Vercel'in görsel optimizasyon kotası dolduğunda /_next/image 402
+    // döndürüyor ve tüm fotoğraflar kırık görünüyor. public/ altındaki
+    // görseller zaten en fazla 1360px ve ~300KB, bu yüzden optimizasyon
+    // katmanına ihtiyaç yok — dosyaları doğrudan servis ediyoruz.
+    unoptimized: true,
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     minimumCacheTTL: 60 * 60 * 24 * 30, // 30 gün
